@@ -11,21 +11,5 @@ body{width:35em;margin:0 auto;font-family:Tahoma,Verdana,Arial,sans-serif;}
 <p>If you see this page, the gc-web server is successfully installed and
 working. Further configuration is required.</p>
 
-<p><em>Thank you for using nginx.</em></p>
-
-<p>This page well redirect to online (<span id="timer">10</span>s)</p>
-<script>
-(function() {
- var d = document.getElementById('timer'), timeout = parseInt(d.innerHTML, 10);
- setTimeout(function loop() {
-   timeout--;
-   d.innerHTML = timeout;
-   if (timeout <= 0) {
-     setTimeout(function(){document.body.innerHTML=""},0);
-   } else {
-    setTimeout(loop, 1000);
-   }
- }, 1000);
-}());
-</script>
+<p><em>Thank you for using gc-servers.</em></p>
 </body></html>
