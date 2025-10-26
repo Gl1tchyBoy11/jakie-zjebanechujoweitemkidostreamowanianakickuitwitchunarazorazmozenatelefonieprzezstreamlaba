@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Ciemny Gradient</title>
+  <style>
+    @property --start {
+      syntax: '<color>';
+      inherits: false;
+      initial-value: #0f0f0f;
+    }
+
+    @property --end {
+      syntax: '<color>';
+      inherits: false;
+      initial-value: #1a1a2e;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      background: linear-gradient(to right, var(--start), var(--end));
+      animation: kolorZmiana 3s infinite alternate;
+      transition: background 1s ease;
+    }
+
+    @keyframes kolorZmiana {
+      0% {
+        --start: #0f0f0f;
+        --end: #1a1a2e;
+      }
+      25% {
+        --start: #1a1a2e;
+        --end: #16213e;
+      }
+      50% {
+        --start: #16213e;
+        --end: #0f3460;
+      }
+      75% {
+        --start: #0f3460;
+        --end: #53354a;
+      }
+      100% {
+        --start: #53354a;
+        --end: #0f0f0f;
+      }
+    }
+
+    h1 {
+      font-size: 3em;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+    }
+    img {
+      width: 20%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <img src="pepe.png">
+</body>
+</html>
