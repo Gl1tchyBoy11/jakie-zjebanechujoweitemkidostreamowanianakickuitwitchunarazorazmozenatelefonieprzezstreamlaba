@@ -8,6 +8,8 @@
         padding: 0;
         background: transparent; /* przezroczyste tło */
         overflow: hidden;
+        color: white;
+        font-family: 'Segoe UI', sans-serif;
     }
 
     .img {
@@ -27,10 +29,20 @@
     .overlay {
       animation: zoomInOut 6s ease-in-out infinite;
     }
+    p {
+      font-size: 90px;
+      position: absolute;
+      font-weight: bold;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      
+    }
 </style>
 </head>
 <body>
+  
+    <p style="position: absolute; z-index: 2;">Szukam se gry</p>
     <img class="img" src="https://github.com/Gl1tchyBoy11/jakie-zjebanechujoweitemkidostreamowanianakickuitwitchunarazorazmozenatelefonieprzezstreamlaba/blob/main/jakie%C5%9B%20co%C5%9B.png?raw=true" alt="Overlay">
 </body>
 </html>
-
